@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>ChavalesChefs</title>
+    <title>🔥 ChavalesChefs 🍳</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
+            background: linear-gradient(135deg, #FF6B6B, #FFE66D);
+            color: #2F3542;
             min-height: 100vh;
         }
         
@@ -20,7 +20,8 @@
             margin: 40px 0;
             font-family: 'Pacifico', cursive;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            color: #fff;
+            color: #FF4757;
+            animation: bounce 2s infinite;
         }
         
         .jueces-container {
@@ -34,16 +35,18 @@
         .juez {
             text-align: center;
             max-width: 280px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 20px;
             backdrop-filter: blur(10px);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 3px dashed #FFA502;
         }
         
         .juez:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px) rotate(3deg);
+            background: rgba(255, 165, 2, 0.1);
         }
         
         .juez img {
@@ -51,15 +54,19 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid rgba(255, 255, 255, 0.3);
+            border: 4px solid #FF6B6B;
             margin-bottom: 20px;
+            box-shadow: 0 0 20px #FFE66D;
         }
         
         .descripcion {
             font-size: 0.95em;
-            color: #ecf0f1;
+            color: #2F3542;
             line-height: 1.6;
             min-height: 80px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
         }
         
         .carrusel-container {
@@ -80,16 +87,34 @@
         .plato {
             width: 400px;
             height: 250px;
-            border-radius: 15px;
+            border-radius: 25px;
             object-fit: cover;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
-            border: 3px solid white;
+            transition: all 0.3s ease;
+            border: 4px solid #FFD700;
+            filter: drop-shadow(0 0 10px #FF6B6B);
         }
         
         .plato:hover {
-            transform: scale(1.05);
+            transform: scale(1.05) rotate(-5deg);
             cursor: pointer;
+            border-color: #FF6B6B;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h2 {
+            color: #2ED573;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px white;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
         }
         
         ::-webkit-scrollbar {
@@ -97,39 +122,40 @@
         }
         
         ::-webkit-scrollbar-thumb {
-            background: #e74c3c;
+            background: #FFA502;
             border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <h1 class="titulo">ChavalesChefs</h1>
-    <h2 class="titulo">Jueces</h2>
+    <h1 class="titulo">🍳🔥 ChavalesChefs 👨🍳👩🍳</h1>
+    <h2>👨⚖️👩⚖️ Los Jueces Más Picantes 🌶️✨</h2>
     <div class="jueces-container">
         <div class="juez">
             <img src="jon.jpg" alt="Jon Ander">
-            <h2>Jon Ander</h2>
-            <p class="descripcion">Maestro de la cocina molecular con 15 años de experiencia. Su lema: "La cocina es ciencia con sabor"</p>
+            <h2 style="color: #FFD700;">Jon Ander 🧪🔬</h2>
+            <p class="descripcion">¡Alquimista culinario! Transforma líquidos en explosiones de sabor 💥 15 años haciendo magia (y espumas raras) #CienciaSabrosa</p>
         </div>
         
         <div class="juez">
             <img src="melody.jpg" alt="Adrian Matesanz">
-            <h2>Adrian Matesanz</h2>
-            <p class="descripcion">Especialista en fusión internacional. Ganador de 3 estrellas Michelin por sus creaciones innovadoras</p>
+            <h2 style="color: #00FF7F;">Adrian Matesanz 🌍✈️</h2>
+            <p class="descripcion">Gurú de fusión global 🌮🍣🥘 3 estrellas Michelin y 7 pasaportes culinarios. ¡Su wok es su pasaporte!</p>
         </div>
         
         <div class="juez">
             <img src="laali.jpg" alt="Alicia Berdugo">
-            <h2>Alicia Berdugo</h2>
-            <p class="descripcion">Reina de la repostería moderna. Sus postres son auténticas obras de arte comestibles</p>
+            <h2 style="color: #FF69B4;">Alicia Berdugo 🎂✨</h2>
+            <p class="descripcion">Reina del azúcar 👑🍭 Sus postres son tan hermosos que da pena comerlos... ¡pero imposible resistirse! 😋</p>
         </div>
     </div>
     
+    <h2>🍽️ Obras Maestras del Concurso 🎨👨🍳</h2>
     <div class="carrusel-container">
         <div class="carrusel">
-            <img class="plato" src="patatas.jpg" href="lasaña_tradicional.html" alt="Plato molecular">
-            <img class="plato" src="plato2.jpg" href="lasaña_tradicional.html" alt="Sushi creativo">
-            <img class="plato" src="plato3.jpg" href="vegerariana_de_espinacas.html"alt="Postre artístico">
+            <a href="lasaña_tradicional.html"><img class="plato" src="patatas.jpg" alt="Plato molecular 🧪✨"></a>
+            <a href="lasaña_tradicional.html"><img class="plato" src="plato2.jpg" alt="Sushi creativo 🍣🎨"></a>
+            <a href="vegerariana_de_espinacas.html"><img class="plato" src="plato3.jpg" alt="Postre artístico 🎂🖼️"></a>
         </div>
     </div>
 </body>
