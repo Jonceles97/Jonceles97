@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarta de Queso Cremosa</title>
+    <style>
+        /* Mantenemos todos los estilos originales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            min-height: 100vh;
+        }
+        
+        .titulo {
+            text-align: center;
+            animation: shake 2s infinite;
+            margin-bottom: 40px;
+        }
+        
+        .titulo a {
+            color: #c62828;
+            text-decoration: none;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .receta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            animation: slideIn 1.5s ease-out;
+        }
+        
+        .ingredientes, .pasos {
+            margin: 25px 0;
+            padding: 20px;
+            border-left: 5px solid #ef5350;
+            transition: transform 0.3s ease;
+        }
+        
+        .ingredientes:hover, .pasos:hover {
+            transform: translateX(10px);
+        }
+        
+        h2 {
+            color: #b71c1c;
+            margin-bottom: 15px;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <a href="index.html">🍰 Tarta de Queso Cremosa 🍓</a>
+    </div>
+    
+    <div class="receta-container">
+        <div class="ingredientes">
+            <h2>🥄 Ingredientes (8 porciones):</h2>
+            <ul>
+                <li>600g de queso crema (tipo Philadelphia)</li>
+                <li>200g de galletas digestivas</li>
+                <li>100g de mantequilla derretida</li>
+                <li>200ml de nata para montar</li>
+                <li>150g de azúcar glass</li>
+                <li>3 huevos grandes</li>
+                <li>1 cucharadita de esencia de vainilla</li>
+                <li>Mermelada de frutos rojos para decorar</li>
+            </ul>
+        </div>
+        
+        <div class="pasos">
+            <h2>👩🍳 Pasos de preparación:</h2>
+            <ol>
+                <li>Triturar las galletas y mezclar con la mantequilla derretida</li>
+                <li>Prensar la mezcla en el molde para formar la base y refrigerar</li>
+                <li>Batir el queso crema con el azúcar hasta cremoso</li>
+                <li>Añadir los huevos uno a uno y la vainilla, mezclar bien</li>
+                <li>Incorporar la nata montada con movimientos envolventes</li>
+                <li>Hornear a 160°C en baño María durante 50 minutos</li>
+                <li>Dejar enfriar 2 horas en el horno y luego refrigerar 4 horas</li>
+                <li>Decorar con mermelada de frutos rojos antes de servir</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
